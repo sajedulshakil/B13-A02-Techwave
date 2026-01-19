@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Layering</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Parent container */
+.image-wrapper {
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+/* Background images */
+.bg {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.bg-1 {
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.bg-2 {
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+/* Microphone image (front) */
+.mic {
+    position: absolute;
+    width: 180px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+     </style>
+</head>
+<body>
+
+<div class="image-wrapper">
+    <!-- Background images -->
+    <img src="assets/hero-bg.png" alt="Background 1" class="bg bg-1">
+    <img src="assets/hero-circle.png" alt="Background 2" class="bg bg-2">
+
+    <!-- Microphone image (front) -->
+    <img src="assets/microphone.png" alt="Microphone" class="mic">
+</div>
+
+</body>
+</html>

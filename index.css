@@ -21,11 +21,11 @@ body{
     margin: 0 auto;
     justify-content: space-between;
     /* padding: 20px 200px; */
-    padding: 20px;
+    padding: 16px 200px;
     /* border: 2px solid red; */
     background-color: #1A0B2E;
     align-items: center;
-    padding: 30px 200px;
+    padding: 30px 100px;
 }
 
 
@@ -69,6 +69,122 @@ body{
 
 
 
+/* banner section */
+.banner-section{
+    position: relative;
+   width: 1250px;
+    height: 760px;
+    overflow: hidden;
+}
+
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 760px;
+    z-index: 3;
+}
+
+.bg-1{
+    top: 0;
+    left: 0;
+    
+}
+
+
+.bg-2{
+ 
+    bottom: 43%;
+    right: 39%;
+    width: 280px;
+    height: 300px;
+   
+}
+
+.mic{
+    position: absolute;
+    z-index: 5;
+    width: 120px;
+    left: 45%;
+    top: 25%;
+
+}
+
+.nw{
+    position: absolute;
+    z-index: 5;
+    left: 56%;
+    top: 20%;
+    width: 75px;
+    height: 38px;
+    border-radius: 1000px;
+    columns: rgba(26, 11, 46, 1);
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgba(0, 255, 136, 1);
+}
+
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.content{
+   position: absolute;
+   z-index: 5;
+   top: 63%;
+   left: 27%;
+   text-align: center;
+   
+}
+
+.content h1{
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+
+.content p{
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.btn-1{
+    color: #FFFFFF;
+     background: linear-gradient(#F7E93F, #FB09B4, #9100F8);
+     padding: 12px 20px;
+     border-radius: 10000px;
+     font-size: 16px;
+     font-weight: 600;
+    
+}
+
+
+.btn-2{
+     padding: 12px 20px;
+     border-radius: 1000px;
+     color: #00FF88;
+     border: 1px solid #00FF88;
+     background: none;
+      font-size: 16px;
+     font-weight: 600;
+   
+}
+
+
 @media screen and (max-width: 576px) {
   .menu {
         display: none; /* hide menu items */
@@ -87,5 +203,20 @@ body{
         justify-content: space-between;
         width: 100%;
         padding: 20px;
+    }
+
+    /* .banner-section */
+
+    .banner-section{
+        max-width: 100%;
+         padding: 50px;
+      margin: 0 auto;
+      
+    }
+
+    .content{
+        max-width: 100%;
+     
+          
     }
 }
