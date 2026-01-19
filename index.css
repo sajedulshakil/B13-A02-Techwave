@@ -2,6 +2,7 @@
 
 body{
      font-family: "Inter", sans-serif;
+    overflow: auto;
 }
 
 /* universal */
@@ -15,7 +16,7 @@ body{
 /* navbar section */
 
 .navbar-heading{
-   width: 1250px;
+   width: 1220px;
    /* height: 92px; */
     display: flex;
     margin: 0 auto;
@@ -72,7 +73,7 @@ body{
 /* banner section */
 .banner-section{
     position: relative;
-   width: 1250px;
+   width: 1220px;
     height: 760px;
     overflow: hidden;
 }
@@ -185,38 +186,156 @@ body{
 }
 
 
+/* podcast section */
+
+.podcast-section{
+     width: 1220px;
+    height: 647px;
+    /* border: 2px solid red; */
+    padding: 50px 200px 160px 200px;
+    text-align: center;
+    background-color: #1A0B2E;
+}
+
+.podcast-info>h2{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.podcast-info>p{
+    font-size: 14px;
+    line-height: 20px;
+   color: #FFFFFF;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 80px;
+     /* border: 2px solid red; */
+    margin-top: 160px;
+    margin-bottom: 120px;
+    align-items: center;
+}
+
+.box-container>p{
+    font-size: 16px;
+    font-weight: 400;
+   
+}
+
+
+.ph{
+    font-size: 15px;
+}
 @media screen and (max-width: 576px) {
+/* navbar section */
+  .navbar-heading {
+    width: 100%;
+    padding: 16px 20px;
+  }
+
   .menu {
-        display: none; /* hide menu items */
-    }
+    display: none;
+  }
 
- .hamburger-icon{
-        display: block; /* show hamburger icon */
-       
-    }
+  .btn {
+    display: none;
+  }
 
-    .btn {
-        display: none; /* optional: hide subscribe button */
-    }
+  .hamburger-icon {
+    display: block;
+    width: 28px;
+  }
 
-    .navbar-heading {
-        justify-content: space-between;
-        width: 100%;
-        padding: 20px;
-    }
+ /* banner section */
+  .banner-section {
+    width: 100%;
+    height: 600px;
+  }
 
-    /* .banner-section */
+  .bg {
+    width: 100%;
+    height: 600px;
+    /* object-fit: cover; */
+    background-position: cover;
+  }
 
-    .banner-section{
-        max-width: 100%;
-         padding: 50px;
-      margin: 0 auto;
-      
-    }
+  .bg-2 {
+    width: 180px;
+    height: 180px;
+    /* right: 30%;
+    bottom: 45%; */
+    right: 30%;
+    bottom: 45%;
+  }
 
-    .content{
-        max-width: 100%;
-     
-          
-    }
+ /* microphone section */
+  .mic {
+    width: 80px;
+    left: 52%;
+    top: 29%;
+    transform: translateX(-50%);
+  }
+
+  .nw {
+    width: 60px;
+    height: 30px;
+    font-size: 14px;
+    left: 58%;
+    top: 25%;
+  }
+
+  /* content section */
+  .content {
+    width: 100%;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%);
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 36px;
+  }
+
+  .content p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+ /* button section */
+  .button {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .btn-1,
+  .btn-2 {
+    width: 100%;
+    max-width: 260px;
+    font-size: 14px;
+  }
+
+  /* podcast section */
+
+  .podcast-section{
+    width: 100%;
+    padding: 20px;
+   
+    
+  }
+
+  .box-container{
+     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin-top: 80px;
+  }
 }
