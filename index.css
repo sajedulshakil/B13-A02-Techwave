@@ -188,6 +188,28 @@ body{
      font-weight: 600;
    
 }
+.mic{
+    position: absolute;
+    z-index: 5;
+    width: 120px;
+    left: 45%;
+    top: 25%;
+    animation: micMove 5s ease-in-out infinite;
+}
+
+@keyframes micMove {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-18px) rotate(2deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+
 
 
 /* podcast section */
